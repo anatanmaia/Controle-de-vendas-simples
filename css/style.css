@@ -60,7 +60,7 @@ body,
     justify-content: center;
 }
 
-.filters input {
+.filters input{
     width: 150px;
     margin: 0.5rem;
     padding: 5px;
@@ -70,32 +70,77 @@ body,
 
     outline: none;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .filters input[type="text"] {
     font-size: 12px;
     padding: 8px;
 }
+
+.filters button {
+    width: 35px;
+    padding: 7px;
+
+    border: 1px solid black;
+    border-radius: 0.3rem;
+
+    background: none;
+    transition: 0.5s;
+}
+
+
 .filters a {
     text-decoration: none;
     color: black;
     font: 700 0.9rem 'Archivo', sans-serif;
     margin: 0.5rem;
+
+    transition: 0.5s;
 }
 .filters a:hover {
     color: var(--main-color-dark);
 }
 
-.filters .name:hover,
-.filters .date:hover {
+.filters #name:hover,
+.filters #date:hover,
+.filters #add:hover {
     border-color: var(--main-color-dark);
     box-shadow: 0px 0px 8px var(--main-color-linght);
 }
 
+.main-container .sale-list{
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.main-container .sale-list .sale {
+    width: 100%;
+    margin: 1.2rem auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale span {
+    font: 700 0.8rem 'Archivo', sans-serif;
+    text-transform: uppercase;
+
+    padding-right: 1rem;
+}
+
+.sale a {
+    text-decoration: none;
+    color: var(--main-color-dark);
+    font-family: var(--secondary-text-font);
+}
+
+
 @media (max-width: 595px) {
     .main-container .filters {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -105,4 +150,21 @@ body,
         width: 70%;
     }
 
+    .filters button {
+        display: none;
+    }
+    
+    .sale {
+        display: block;
+    }
+
+    .sale span {
+        padding: 0;
+    }
+}
+
+@media (min-width: 595px) {
+    .filters a {
+        display: none;
+    }
 }
