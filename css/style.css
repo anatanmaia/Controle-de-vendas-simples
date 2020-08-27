@@ -5,6 +5,7 @@
 
     --main-color-dark: #FFCC00;
     --main-color-linght: #F7DC6F;
+    --color-text-primary: #B3B6B7;
 }
 
 *,
@@ -117,15 +118,18 @@ body,
 .main-container .sale-list .sale {
     width: 100%;
     margin: 1.2rem auto;
+    padding: 5px 0;
 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    transition: 0.5s;
 }
 
 .sale span {
-    font: 700 0.8rem 'Archivo', sans-serif;
+    font: 400 0.8rem 'Archivo', sans-serif;
     text-transform: uppercase;
 
     padding-right: 1rem;
@@ -133,8 +137,13 @@ body,
 
 .sale a {
     text-decoration: none;
-    color: var(--main-color-dark);
+    color: var(--color-text-primary);
     font-family: var(--secondary-text-font);
+}
+
+.sale:hover {
+    transform: translateY(-5px);
+    background: var(--main-color-linght);
 }
 
 
