@@ -11,11 +11,12 @@
 
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/partials/sales.css">
 
 </head>
 <body>
-    <div id="app">
-        <header>
+    <div id="content-container">
+        <header class="header">
             <h1>Histórico de vendas</h1>
             <p>Adicione e visualize vendas</p>
         </header>
@@ -23,15 +24,15 @@
             <div class="filters">
                 <input type="text" class="name" id="name" placeholder="Busca por nome" spellcheck="false">
                 <input type="date" class="date" id="date">
-                <button type="submit" id="addSale"><i class="fa fa-plus" aria-hidden="true"></i>
-                </button>
+                <a href="form.html"><i class="fa fa-plus" aria-hidden="true"></i>
+                </a>
             </div>
 
-            <div class="sales-history">
+            <div class="effective-sales_container">
                <div class="sale">
                     <span>Anatan Maia De Souza</span>
                     <span>26/nov</span>
-                    <a href="#">Ver detalhes</a>
+                    <a href="#" id="openDetails">Ver detalhes</a>
                </div>
                <div class="sale">
                     <span>Anatan Maia De Souza</span>
@@ -48,9 +49,64 @@
                     <span>26/nov</span>
                     <a href="#">Ver detalhes</a>
                 </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
             </div>
         </main>
-        <div class="popup"></div>
+        <div class="detailed-sale_container">
+            <button id="closeDetails"><i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+
+            <div class="content">
+                <p>ANATAN MAIA DE SOUZA</p>
+                <p>399,99</p>
+                <p>
+                CAMISA 3 INTERNACIONAL 20/21
+                TECNOLOGIA ANTISSUOR NAS CORES ALTERNATIVAS DO CLUBE
+                </p>
+                <p>26/11/2020</p>
+            </div>
+
+            
+        </div>
     </div>
     <script src="/scripts/main.js"></script>
 </body>

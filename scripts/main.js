@@ -1,13 +1,23 @@
-var btnEl = document.querySelector('#addSale');
+var openDetails = document.querySelector('#openDetails');
+var closeDetails = document.querySelector('#closeDetails');
 
-function openPopup() {
-    btnEl.addEventListener('click', ()=> {
-        let container = document.querySelector('#app .container');
-        let popup = document.querySelector('#app .popup');
+var container = document.querySelector('#content-container .container');
+var detailedEl = document.querySelector('.detailed-sale_container');
 
+function openElement() {
+    openDetails.addEventListener('click', ()=> {
         container.style.display = 'none';
-        popup.style.display= 'block';
+        detailedEl.style.display = 'block';
     });
 }
 
-openPopup();
+openElement();
+
+function closeElement() {
+    closeDetails.addEventListener('click', ()=> {
+        detailedEl.style.display = 'none';
+        container.style.display = 'block';
+    });
+}
+
+closeElement();
