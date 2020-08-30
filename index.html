@@ -19,16 +19,15 @@
             <h1>Histórico de vendas</h1>
             <p>Adicione e visualize vendas</p>
         </header>
-        <main class="main-container">
+        <main class="container">
             <div class="filters">
                 <input type="text" class="name" id="name" placeholder="Busca por nome" spellcheck="false">
                 <input type="date" class="date" id="date">
-                <button type="submit" id="add"><i class="fa fa-plus" aria-hidden="true"></i>
+                <button type="submit" id="addSale"><i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
-                <a href="#">Nova venda +</a>
             </div>
 
-            <div class="sale-list">
+            <div class="sales-history">
                <div class="sale">
                     <span>Anatan Maia De Souza</span>
                     <span>26/nov</span>
@@ -44,10 +43,15 @@
                     <span>26/nov</span>
                     <a href="#">Ver detalhes</a>
                 </div>
+                <div class="sale">
+                    <span>Anatan Maia De Souza</span>
+                    <span>26/nov</span>
+                    <a href="#">Ver detalhes</a>
+                </div>
             </div>
-
         </main>
+        <div class="popup"></div>
     </div>
-    
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
