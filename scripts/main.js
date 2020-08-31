@@ -1,8 +1,8 @@
 var openDetails = document.querySelector('#openDetails');
 var closeDetails = document.querySelector('#closeDetails');
 
-var container = document.querySelector('#content-container .container');
-var detailedEl = document.querySelector('.detailed-sale_container');
+var container = document.querySelector('#sales');
+var detailedEl = document.querySelector('#details');
 
 function openElement() {
     openDetails.addEventListener('click', ()=> {
