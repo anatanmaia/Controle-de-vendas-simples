@@ -1,0 +1,152 @@
+.content-container .filters {
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters input{
+    width: 150px;
+    margin: 0.5rem;
+    padding: 5px;
+
+    border: 1px solid black;
+    border-radius: 0.3rem;
+
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.filters input[type="text"] {
+    font-size: 12px;
+    padding: 8px;
+}
+.filters a {
+    width: auto;
+    padding: 5px;
+
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    border: none;
+    border-radius: 0.3rem;
+
+    outline: none;
+
+    transition: 0.5s;
+}
+
+.filters a > image {
+    width: 100%;
+    margin: 0 auto;
+
+    color: (var(--color-text-linght));
+}
+
+.filters input:focus {
+    border-color: var(--main-color-dark);
+}
+
+.content-container .effective-sales_container{
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.effective-sales_container .sale {
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 5px 0;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    transition: 0.2s;
+}
+
+.sale:hover {
+    transform: translateY(-5px);
+}
+
+.sale span {
+    font: 400 0.8rem 'Archivo', sans-serif;
+    text-transform: uppercase;
+
+    padding-right: 1rem;
+}
+
+.sale a {
+    text-decoration: none;
+    font-family: var(--primary-font-text);
+}
+
+#details {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    margin: -18px auto;
+    padding: 0.8rem 1rem;
+
+    background-color: white;
+
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+
+    animation: animation-class 0.8s;
+
+    display: none;
+}
+
+#details button {
+    position: absolute;
+    right: 1.2rem;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    font-size: 1.2rem;
+}
+
+#details .content {
+    width: 100%;
+    margin: 3rem auto;
+}
+
+#details p {
+    margin: 1.2rem 1.2rem;
+    font: 400 15px var(--primary-font-text);
+    color: black;
+}
+
+@media (max-width: 595px) {
+    #sales .filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #sales .filters input {
+        width: 70%;
+    }
+
+    .filters a {
+        width: 70%;
+
+        background: var(--main-color-dark);
+    }
+    
+    .sale {
+        display: block;
+    }
+
+    .sale span {
+        padding: 0;
+    }
+}

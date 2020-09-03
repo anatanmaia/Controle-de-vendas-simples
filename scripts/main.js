@@ -1,14 +1,17 @@
-var openDetails = document.querySelector('#openDetails');
+var openDetails = document.querySelectorAll('.sale a');
 var closeDetails = document.querySelector('#closeDetails');
 
 var container = document.querySelector('#sales');
 var detailedEl = document.querySelector('#details');
 
 function openElement() {
-    openDetails.addEventListener('click', ()=> {
-        container.style.display = 'none';
-        detailedEl.style.display = 'block';
-    });
+
+    for (btnOpen of openDetails) {
+        btnOpen.addEventListener('click', () => {
+            container.style.display = 'none';
+            detailedEl.style.display = 'block';
+        });
+    }
 }
 
 openElement();

@@ -1,153 +1,76 @@
-.content-container .filters {
-    width: 95%;
-    margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.container-inputs {
+    width: 55%;
+    margin: 2rem auto;
+
+    transition: 0.5s;
 }
 
-.filters input{
-    width: 150px;
-    margin: 0.5rem;
-    padding: 5px;
+.container-inputs input {
+    display: block;
+
+    width: 100%;
+    padding: 6px;
+    margin: 0.8rem auto;
 
     border: 1px solid black;
     border-radius: 0.3rem;
 
     outline: none;
     text-transform: uppercase;
+    font: 400 0.8rem var(--primary-font-text);
+    color: var(--color-text-lightd);
+
     transition: 0.5s;
 }
 
-.filters input[type="text"] {
-    font-size: 12px;
-    padding: 8px;
-}
-
-.filters a {
-    width: 35px;
-    padding: 8px;
-
-    text-align: center;
-    text-decoration: none;
-    color: black;
-
+.container-inputs fieldset {
     border: none;
-    border-radius: 0.3rem;
-
-    background: var(--main-color-dark);
-    outline: none;
-    transition: 0.5s;
 }
 
-.filters input:hover,
-.filters a:hover {
-    border-color: var(--main-color-dark);
-    box-shadow: 0px 0px 10px var(--main-color-linght);
-}
-
-.content-container .effective-sales_container{
-    width: 95%;
-    margin: 2rem auto;
-}
-
-.effective-sales_container .sale {
-    width: 100%;
-    margin-top: 1.2rem;
-    padding: 5px 0;
-
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    transition: 0.2s;
-}
-
-.sale:hover {
-    transform: translateY(-5px);
-    background: var(--main-color-linght);
-}
-
-.sale span {
-    font: 400 0.8rem 'Archivo', sans-serif;
-    text-transform: uppercase;
-
-    padding-right: 1rem;
-}
-
-.sale a {
-    text-decoration: none;
-    color: var(--color-text-linght);
-    font-family: var(--primary-font-font);
-}
-
-.sale a:hover {
+fieldset label {
+    font: 700 0.9rem 'Archivo', sans-serif;
     color: var(--color-text-dark);
 }
 
-
-#details {
-    position: relative;
+fieldset textarea {
     width: 100%;
-    min-height: 250px;
-    margin: -18px auto;
-    padding: 0.8rem 1rem;
+    padding: 8px;
+    margin: 0.8rem auto;
 
-    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.3rem;
 
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
+    font: 400 0.7rem var(--primary-font-text);
 
-    animation: animation-class 0.8s;
-
-    display: none;
-}
-
-#details button {
-    position: absolute;
-    right: 1.2rem;
-
-    background: none;
-    border: none;
     outline: none;
-
-    font-size: 1.2rem;
+    resize: vertical;
+    text-transform: uppercase;
 }
 
-#details .content {
+.container-inputs input:focus,
+.container-inputs textarea:focus {
+    border-color: var(--main-color-dark)
+}
+.container-inputs input[type='button'] {
     width: 100%;
-    margin: 3rem auto;
+    padding: 8px;
+
+    border: none;
+    font: 700 0.9rem 'Archivo', sans-serif;
+
+    background: var(--color-transition-btn);
+
+    transition: 0.5s;
 }
 
-#details p {
-    margin: 1.2rem 1.2rem;
-    font: 400 15px var(--primary-font-font);
-    color: black;
+.container-inputs input[type='button']:hover {
+    background: var(--main-color-dark);
 }
 
-@media (max-width: 595px) {
-    #sales .filters {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    #sales .filters input {
-        width: 70%;
-    }
-
-    .filters a {
-        width: 70%;
-    }
-    
-    .sale {
-        display: block;
-    }
-
-    .sale span {
-        padding: 0;
+@media (max-width: 595px ) {
+    .container-inputs {
+        width: 90%;
     }
 }
