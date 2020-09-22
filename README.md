@@ -1,2 +1,2 @@
-# Sales-manager
- Crie novas vendas, gerencie prazos e status de pagamento.
+# layout-controle-de-venda
+ Crie novas vendas, visualize históricos e veja status de vendas.
